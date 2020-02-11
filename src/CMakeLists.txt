@@ -25,7 +25,10 @@ set(SOURCE_FILES Main
         Visitors/RemoveSubElementsVisitor
         )
 
+set(EMULATOR_FILES Emulator/Main ${SOURCE_FILES})
+
 add_executable(mesher_roi ${SOURCE_FILES})
+add_executable(emulator ${EMULATOR_FILES})
 
 # obsolete 3D files to be removed
 
